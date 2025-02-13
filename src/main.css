@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+* {
+    font-family: "Nunito Sans", serif;
+    @apply selection:bg-slate-300;
+}
+
+.input {
+    @apply px-4 py-3 bg-slate-400 text-slate-900 placeholder:text-slate-500 rounded-md border-1 border-slate-300 focus:border-slate-700 focus:outline-0;
+    transition: .2s ease-in-out;
+    background-color: #F3FFFB;
+}
+
+.link {
+    @apply hover:opacity-80;
+    transition: .2s ease-in-out;
+}
+
+.btn-primary {
+    @apply text-center py-3 font-bold text-slate-900 text-xl rounded-lg cursor-pointer border-2 hover:bg-white;
+    background: rgb(6, 237, 154);
+    border-color: rgb(6, 237, 154);
+    transition: .2s ease-in-out;
+}
+
+
+.label {
+    @apply py-1 px-3 bg-slate-100 text-gray-400 rounded-lg font-bold;
+}
+
+.nav-tab {
+    @apply flex items-center gap-4 cursor-pointer rounded-sm;
+    transition: all .1s ease-in-out;
+    border-color: #CCFFED;
+}
+
+.nav-tab p {
+    @apply py-2 px-3.5 rounded-md;
+}
+
+.nav-tab_active {
+    @apply border-l-4;
+}
+
+.nav-tab_active img {
+   opacity: 0;
+}
+
+.nav-tab_active p {
+    background: #CCFFED;
+ }

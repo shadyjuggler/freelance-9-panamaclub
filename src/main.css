@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 * {
     font-family: "Nunito Sans", serif;
     @apply selection:bg-slate-300 text-slate-900;
@@ -106,4 +107,21 @@
 
 .hoverprimary:hover {
     background: #06ED9A;
+}
+
+.react-toggle-track {
+    width: 30px!important;
+    height: 15px!important;
+    background-color: #0EC583!important;
+}
+.react-toggle-thumb {
+    translate: -35% -15%;
+    border: 1px solid black;
+    outline: none;
+    width: 18px!important;
+    height: 18px!important;
+}
+
+.react-toggle:not(.react-toggle--checked) .react-toggle-thumb {
+    translate: -45% -15%;
 }

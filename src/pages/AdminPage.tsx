@@ -9,6 +9,7 @@ import { Withdraw } from "../components/Withdraw"
 import { Card } from "../components/Card"
 import { History } from "../components/History"
 import { HistoryDetails } from "../components/HistoryDetails"
+import Toggle from 'react-toggle'
 
 
 export const AdminPage = () => {
@@ -90,12 +91,25 @@ export const AdminPage = () => {
             </div>
 
             <div className="mt-8">
-                {/* <label class="inline-flex items-center cursor-pointer">
-                    <input type="checkbox" value="" class="sr-only peer">
-                        <div class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-blue-600"></div>
-                        <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">Toggle me</span>
-                </label> */}
+                <Card isFullHeigh={false}>
+                    <div className="flex gap-5 items-center px-4">
+                        <p className="font-semibold">Баланс</p>
+                        <Toggle className='toggler' defaultChecked={true} icons={false} />
+                        <p className="font-semibold">Реферальный баланс</p>
 
+                    </div>
+                    <form className="flex flex-col w-full gap-6">
+                        <div className="mt-4 flex gap-8">
+                            <input placeholder="3200" className="w-3/4 py-4 text-center px-4 green-border rounded-md border-1 text-xl border-slate-200 focus:!border-green-600 focus:outline-0" />
+                            <button type="button" className="w-1/4 btn-primary">Добавить</button>
+                            <button type="button" className="w-1/4 btn-primary !border-0" style={{background: "#FFD7D5"}}>Отнять</button>
+                            <div className="flex gap-2 items-center">
+                                <input type="checkbox" id="hide_transaction" name="hide_transaction" className="w-4 h-4 appearance-none border-1 border-green-500 rounded-sm checked:bg-green-500" />
+                                <label htmlFor="hide_transaction" className="whitespace-nowrap text-lg">Спрятать транзакцию</label>
+                            </div>
+                        </div>
+                    </form>
+                </Card>
             </div>
 
             <div className="mt-12 flex gap-4 h-140">

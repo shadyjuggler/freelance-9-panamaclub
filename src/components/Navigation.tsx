@@ -73,6 +73,11 @@ export const Navigation = () => {
                 </div>
             </div>
 
+            <div className="mt-4 flex flex-col gap-2">
+                <button className="rounded-md font-semibold cursor-pointer py-1.5 w-full" style={{background: "#CCFFED"}}>Ввод</button>
+                <button className="rounded-md font-semibold cursor-pointer py-1.5 w-full" style={{background: "#FFEBEB"}}>Вывод</button>
+            </div>
+
             <div className="mt-auto flex gap-4 items-center">
                 <img src={ExitSvg} alt="exit" />
                 Выйти

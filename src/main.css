@@ -86,3 +86,24 @@
 	background-color: #e9e9e9;
     border-radius: 10px;
 }
+
+.green {
+    background: #F3FFFB!important;
+    border: 1px solid #64F7C2;
+}
+
+.green-border {
+    border: 1px solid #64F7C2;
+}
+
+.field {
+    @apply rounded-md text-center py-3 bg-white;
+}
+
+.hoverprimary {
+    transition: .2s ease-in-out;
+}
+
+.hoverprimary:hover {
+    background: #06ED9A;
+}

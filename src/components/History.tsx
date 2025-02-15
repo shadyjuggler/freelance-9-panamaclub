@@ -3,7 +3,7 @@ import { Card } from "./Card"
 
 export const History = ({ data }) => {
     return (
-        <Card>
+        <Card isFullHeigh={true}>
             <div className="flex px-2 pb-2 justify-between border-b-1 border-slate-100">
                 <p className="xl text-lg font-bold">Дата</p>
                 <p className="xl text-lg font-bold">Реферальные начисления</p>

@@ -67,7 +67,7 @@ export const UserSettings = () => {
                             <input className="field green-border w-full !text-left px-6 focus:border-2 focus:!border-green-600 focus:outline-0" placeholder="Введите кошелек"/>
                         </div>
                         <div className="basis-1/4">
-                            <button className="btn-primary w-full !py-2">Сменить</button>
+                            <button type="button" className="btn-primary w-full !py-2">Сменить</button>
                         </div>
                     </form>
                 </Card>

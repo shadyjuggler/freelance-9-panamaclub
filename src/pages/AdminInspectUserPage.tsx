@@ -4,12 +4,12 @@ import { Card } from "../components/Card"
 import { History } from "../components/History"
 import { HistoryDetails } from "../components/HistoryDetails"
 import Toggle from 'react-toggle'
-import { AdminPage } from "../components/AdminPage"
+import { AdminPage } from "./AdminPage"
 
 
-export const AdminInspectUserPage = ({transactions}) => {
+export const AdminInspectUserPage = ({ transactions }) => {
     return (
-        <AdminPage>
+        <div className="w-full flex h-full px-6 py-8 mx-auto flex-col bg-slate-50" style={{ maxWidth: "1250px" }}>
             <div className="flex gap-4">
                 <div className="w-11 h-11 rounded-full bg-slate-300"></div>
                 <div>
@@ -104,6 +104,6 @@ export const AdminInspectUserPage = ({transactions}) => {
                     <HistoryDetails data={transactions} />
                 </div>
             </div>
-        </AdminPage>
+        </div>
     )
 }

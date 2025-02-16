@@ -1,4 +1,5 @@
 import React from "react"
+import { NavLink } from "react-router";
 
 export const Login = () => {
     return (
@@ -22,9 +23,9 @@ export const Login = () => {
                     <input className="input" type="password" id="input-password" name="password" placeholder="••••••••" />
                 </div>
             </div>
-            <button className="btn-primary mt-10 mx-8">
-                Войти
-            </button>
+                <NavLink className="btn-primary mt-10 mx-8" to="/dashboard" end>
+                    Войти
+                </NavLink>
         </form>
     )
 }

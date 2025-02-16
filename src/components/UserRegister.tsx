@@ -22,7 +22,7 @@ export const UserRegister = () => {
                         </div>
 
                     </div>
-                    <button className="btn-primary mt-10 mx-8">
+                    <button type="button" className="btn-primary mt-10 mx-8">
                         Зарегистрировать
                     </button>
                 </form>

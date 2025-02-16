@@ -125,3 +125,21 @@
 .react-toggle:not(.react-toggle--checked) .react-toggle-thumb {
     translate: -45% -15%;
 }
+
+.bg-green {
+    background: #CCFFED;
+}
+.bg-red {
+    background: #FFEBEB;
+}
+
+.pointed {
+    background: #F5E8FF;
+    border-radius: 10px;
+    padding: 4px 8px;
+    font-weight: 700;
+}
+
+.table-title {
+    @apply w-full text-center text-lg font-bold;
+}

@@ -26,6 +26,9 @@ export const Login = () => {
                 <NavLink className="btn-primary mt-10 mx-8" to="/dashboard" end>
                     Войти
                 </NavLink>
+                <NavLink to="/admin" end>
+                    admin
+                </NavLink>
         </form>
     )
 }

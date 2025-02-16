@@ -8,4 +8,11 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  build: {
+    minify: 'terser',
+    terserOptions: {
+      keep_fnames: true, // Prevent function names (including component names) from being mangled
+      keep_classnames: true, // Prevent class names from being mangled
+    }
+  }
 })

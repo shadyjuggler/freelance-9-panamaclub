@@ -19,7 +19,8 @@ import { UserContent } from "../enums/UserConent";
 
 
 export const UserNavigation = ({ contentName, toggleContent }) => {
-    const [activeTab, setActiveTab] = useState(0);
+
+    console.log(contentName);
 
     return (
         <div className="flex flex-col bg-white py-8 pl-16 pr-8 w-full max-w-xs">

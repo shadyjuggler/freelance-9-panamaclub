@@ -85,7 +85,7 @@ export const AdminInspectUserPage = ({ transactions }) => {
                         <div className="mt-4 flex gap-8">
                             <input placeholder="3200" className="w-3/4 py-4 text-center px-4 green-border rounded-md border-1 text-xl border-slate-200 focus:!border-green-600 focus:outline-0" />
                             <button type="button" className="w-1/4 btn-primary">Добавить</button>
-                            <button type="button" className="w-1/4 btn-primary !border-0" style={{ background: "#FFD7D5" }}>Отнять</button>
+                            <button type="button" className="w-1/4 btn-primary bg-red !border-0">Отнять</button>
                             <div className="flex gap-2 items-center">
                                 <input type="checkbox" id="hide_transaction" name="hide_transaction" className="w-4 h-4 appearance-none border-1 border-green-500 rounded-sm checked:bg-green-500" />
                                 <label htmlFor="hide_transaction" className="whitespace-nowrap text-lg">Спрятать транзакцию</label>

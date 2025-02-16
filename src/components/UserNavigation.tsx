@@ -34,7 +34,7 @@ export const UserNavigation = ({ contentName, toggleContent }) => {
                 </div>
             </div>
 
-            <div className="mt-8 flex flex-col pl-4 border-b-1 border-slate-100 pb-4">
+            <div className="mt-8 flex flex-col pl-4 gap-1 border-b-1 border-slate-100 pb-4">
                 <button onClick={() => toggleContent(UserContent.Cabinet)} className={`nav-tab ${contentName === UserContent.Cabinet ? "nav-tab_active" : ""}`}>
                     <img src={CabinetSvg} alt="cabinet" />
                     <p className="py-0 w-full text-left font-semibold text-slate-900">Кабинет</p>
@@ -65,8 +65,8 @@ export const UserNavigation = ({ contentName, toggleContent }) => {
             </div>
 
             <div className="mt-4 flex flex-col gap-2">
-                <button onClick={() => toggleContent(UserContent.Deposit)} className="rounded-md font-semibold cursor-pointer py-1.5 w-full" style={{ background: "#CCFFED" }}>Ввод</button>
-                <button onClick={() => toggleContent(UserContent.WithDraw)} className="rounded-md font-semibold cursor-pointer py-1.5 w-full" style={{ background: "#FFEBEB" }}>Вывод</button>
+                <button onClick={() => toggleContent(UserContent.Deposit)} className="rounded-md font-semibold cursor-pointer py-1.5 w-full bg-green">Ввод</button>
+                <button onClick={() => toggleContent(UserContent.WithDraw)} className="rounded-md font-semibold cursor-pointer py-1.5 w-full bg-red">Вывод</button>
             </div>
 
             <NavLink className="cursor-pointer mt-auto flex gap-4 items-center" to={"/"}>

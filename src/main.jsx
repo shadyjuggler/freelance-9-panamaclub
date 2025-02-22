@@ -4,7 +4,6 @@ import App from './App.jsx'
 import './main.css';
 import "react-toggle/style.css"
 
-//hello
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

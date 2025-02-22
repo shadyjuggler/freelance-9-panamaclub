@@ -19,7 +19,7 @@ export const AdminInspectUserPage = ({ transactions }) => {
             </div>
             <div className="mt-8 flex justify-between gap-24">
                 <div className="w-full flex gap-4">
-                    <div className="w-2/3 py-3 text-center green-border rounded-md ">Реферальный баланс</div>
+                    <div className="w-2/3 py-3 text-center green-border rounded-md ">Баланс</div>
                     <div className="w-1/3 py-3 text-center rounded-md border-1  border-slate-200">500</div>
                 </div>
                 <div className="w-full flex gap-4">

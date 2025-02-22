@@ -67,6 +67,15 @@ export const AdminInspectUserPage = ({ transactions }) => {
                                 <p className="font-semibold field cursor-pointer green-border hoverprimary">Изменить</p>
                             </div>
                         </div>
+                        <div className="flex gap-4">
+                            <div className="w-1/4">
+                                <p className="font-bold field green-border">Password</p>
+                            </div>
+                            <input className="w-1/2 font-semibold field green-border placeholder:text-slate-700" type="password" placeholder="новый пароль" />
+                            <div className="w-1/4">
+                                <p className="font-semibold field cursor-pointer green-border hoverprimary">Изменить</p>
+                            </div>
+                        </div>
 
                     </form>
                     <span></span>
